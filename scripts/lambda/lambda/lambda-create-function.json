@@ -1,0 +1,9 @@
+{
+    "FunctionName": "poc-crossaccount-sqs-lambda",
+    "Runtime": "nodejs12.x",
+    "Role": "arn:aws:iam::854045450972:role/poc-crossaccount-sqs-role",
+    "Handler": "index.handler",
+    "Tags": {
+        "Contact": "Igor Muntyan"
+    }
+}
