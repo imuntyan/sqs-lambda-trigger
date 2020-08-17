@@ -1,0 +1,9 @@
+{
+    "QueueName": "poc-crossaccount-sqs.fifo",
+    "Attributes": {
+        "FifoQueue": "true"
+    },
+    "tags": {
+        "Contact": "Igor Muntyan"
+    }
+}
