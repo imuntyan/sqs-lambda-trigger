@@ -1,0 +1,6 @@
+{
+    "PolicyName": "poc-crossaccount-sqs-policy",
+    "Path": "/",
+    "PolicyDocument": "file://iam-create-policy-content.json",
+    "Description": "Access to SQS"
+}
