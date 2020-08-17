@@ -1,0 +1,6 @@
+{
+    "EventSourceArn": "arn:aws:sqs:us-east-2:160306773861:poc-crossaccount-sqs.fifo",
+    "FunctionName": "poc-crossaccount-sqs-lambda",
+    "Enabled": true,
+    "BatchSize": 10
+}
