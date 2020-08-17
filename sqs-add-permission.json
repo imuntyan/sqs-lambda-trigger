@@ -1,10 +1,12 @@
 {
-    "QueueUrl": "",
-    "Label": "",
+    "QueueUrl": "https://sqs.us-east-2.amazonaws.com/160306773861/poc-crossaccount-sqs.fifo",
+    "Label": "Read Messages",
     "AWSAccountIds": [
-        ""
+        "854045450972"
     ],
     "Actions": [
-        ""
+        "ReceiveMessage",
+        "DeleteMessage",
+        "GetQueueAttributes"
     ]
 }
