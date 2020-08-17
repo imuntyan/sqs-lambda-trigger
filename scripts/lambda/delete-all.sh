@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./iam-delete-role.sh
+(cd role; ./iam-delete-role.sh)

@@ -1,3 +1,4 @@
 #!/bin/sh
 
-./iam-create-role.sh
+(cd role; ./iam-create-role.sh)
+#lambda/
