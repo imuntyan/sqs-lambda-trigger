@@ -2,7 +2,7 @@
     "QueueName": "poc-crossaccount-sqs.fifo",
     "Attributes": {
         "FifoQueue": "true",
-        "KmsMasterKeyId": "poc-crossaccount-sqs-key"
+        "KmsMasterKeyId": "alias/poc-crossaccount-sqs-key"
     },
     "tags": {
         "Contact": "Igor Muntyan"
