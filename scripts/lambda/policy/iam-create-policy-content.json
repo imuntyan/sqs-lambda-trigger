@@ -14,6 +14,19 @@
         },
         {
             "Effect": "Allow",
+            "Action": [
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:DescribeKey"
+            ],
+            "Resource": [
+                "arn:aws:kms:us-east-2:160306773861:key/82208f17-810c-4928-b726-afd6e86a4acb"
+            ]
+        },
+        {
+            "Effect": "Allow",
             "Action": "logs:CreateLogGroup",
             "Resource": "arn:aws:logs:us-east-2:854045450972:*"
         },
