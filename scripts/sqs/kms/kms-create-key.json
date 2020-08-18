@@ -1,0 +1,13 @@
+{
+    "Policy": "{\n    \"Id\": \"poc-crossaccount-sqs-key-policy\",\n    \"Version\": \"2012-10-17\",\n    \"Statement\" : [\n        {\n            \"Sid\": \"Allow an external account to use this CMK\",\n            \"Effect\": \"Allow\",\n            \"Principal\": {\n                \"AWS\": \"arn:aws:iam::854045450972:root\"\n            },\n            \"Action\": [\n                \"kms:Encrypt\",\n                \"kms:Decrypt\",\n                \"kms:ReEncrypt*\",\n                \"kms:GenerateDataKey*\",\n                \"kms:DescribeKey\"\n            ],\n            \"Resource\": \"*\"\n        },\n        {\n            \"Sid\": \"Enable IAM User Permissions\",\n            \"Effect\": \"Allow\",\n            \"Principal\": {\"AWS\": \"arn:aws:iam::160306773861:root\"},\n            \"Action\": \"kms:*\",\n            \"Resource\": \"*\"\n        }\n    ]\n}",
+    "Description": "SQS KMS key for cross-account access",
+    "KeyUsage": "ENCRYPT_DECRYPT",
+    "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+    "Origin": "AWS_KMS",
+    "Tags": [
+        {
+            "TagKey": "Purpose",
+            "TagValue": "Test"
+        }
+    ]
+}

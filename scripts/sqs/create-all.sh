@@ -10,10 +10,18 @@ then
 fi
 printf 'Done.\n'
 
+printf 'Creating KMS key...\n'
+(cd kms; ./kms-create-key.sh)
+printf 'Done.\n'
+
+printf 'Creating KMS key alias...\n'
+(cd kms; ./kms-create-alias.sh)
+printf 'Done.\n'
+
 printf 'Creating SQS queue...\n'
-./sqs-create-queue.sh
+(cd sqs; ./sqs-create-queue.sh)
 printf 'Done.\n'
 
 printf 'Adding cross-account permission...\n'
-./sqs-add-permission.sh
+(cd sqs; ./sqs-add-permission.sh)
 printf 'Done.\n'
