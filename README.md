@@ -15,6 +15,11 @@ The account numbers and region are hardcoded
   cd sqs
   ./create-all.sh
     ```
+- Create SQS KMS Key (producer side). Do it once only - deleting keys takes time:
+  ```bash
+  cd sqs/kms
+  ./kms-create-key.sh
+    ```
 - Create AWS session in the account where lambda consumer should be created
 - Create Lambda and related services and permissions (consumer side):
   ```bash

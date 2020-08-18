@@ -11,5 +11,5 @@ fi
 printf 'Done.\n'
 
 printf 'Deleting SQS queue...\n'
-./sqs-delete-queue.sh
+(cd sqs; ./sqs-delete-queue.sh)
 printf 'Done.\n'
